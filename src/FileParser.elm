@@ -150,9 +150,9 @@ convertMaybeData fileData maybeResultData =
                     convertData fileData (Success data)
 
                 Err deadends ->
+                    -- it's funny because I don't think "deadEndsToString" actually works at the moment ripperoni
                     deadends
-                        |> List.map Debug.toString
-                        |> String.join ","
+                        |> deadEndsToString
                         |> Error
                         |> convertData fileData
 

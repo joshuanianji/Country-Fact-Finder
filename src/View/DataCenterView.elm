@@ -316,11 +316,18 @@ dataDisplay model countryDirectory =
             Element.el [] (Element.text "no filteredData???? bruh")
 
         list ->
+            -- SHOULD NEVER HAPPEN (this means that there is more than one 'GDP' in the model.data, for example.). Therefore I did some random dumb code lol
             Element.row
                 []
                 (List.map
-                    (Debug.toString >> Element.text)
-                    list
+                    (\num ->
+                        if num == 1 then
+                            Element.text "1 Bruh"
+
+                        else
+                            Element.text (String.fromInt num ++ " Bruhs")
+                    )
+                    (List.range 1 20)
                 )
 
 

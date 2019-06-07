@@ -1,0 +1,9 @@
+☐ Remove debug.logs (after you're done)
+Archive:
+  ✔ make the scrolling thing better so we can have a static background lel @done(19-06-07 02:04)
+  ✔ search countries @done(19-06-07 02:04)
+  ✔ fix navbar @done(19-06-04 22:33)
+  ✘ LINE CHARTS??????SKSJSKJDKSJKSJSKJDKSJ (no) @cancelled(19-06-04 22:33)
+  ✔ make parser read commas in numbers (so 1,000,000,000 isn't 1 lmao) @done(19-04-25 14:19)
+  ✔ Figure out a good font for the title @done(19-04-25 09:36)
+  ✔ in my ConvertedData, I need to code in a way to make the infoType in it. @done(19-04-25 09:36)

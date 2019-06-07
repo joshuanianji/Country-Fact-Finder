@@ -74,7 +74,6 @@ add countryInfo searchString data search =
                                 [] ->
                                     -- uh oh spaghatti o's we haven't found a country lol. I still choose to keep the List as is. If it was only because a text file doesn't have a country in it, we shouldn't have to crash the entire process.
                                     List list
-                                        |> Debug.log ("no countries for " ++ searchString ++ " in `" ++ countryInfoToString countryInfo ++ "` but its ok")
 
                                 tidbitData ->
                                     -- now that we have countries we can start to finally fill in the Search that has been passed to this function
@@ -86,7 +85,6 @@ add countryInfo searchString data search =
                                     in
                                     list
                                         |> countryDataModifier simplifiedData countryInfo
-                                        |> Debug.log ("so far so good in `" ++ countryInfoToString countryInfo)
                                         |> List
 
                         Error string ->
@@ -96,21 +94,18 @@ add countryInfo searchString data search =
                                 ++ "' in `"
                                 ++ countryInfoToString countryInfo
                                 ++ "`"
-                                |> Debug.log "convertedData.data is weird"
                                 |> DataError
 
                 [] ->
                     "`"
                         ++ countryInfoToString countryInfo
                         ++ "` was not found in the data"
-                        |> Debug.log "error in filtering countryInfo"
                         |> DataError
 
                 _ ->
                     "`"
                         ++ countryInfoToString countryInfo
                         ++ "` was found multiple times in the data"
-                        |> Debug.log "error in filtering countryInfo"
                         |> DataError
 
 

@@ -42,9 +42,9 @@ update msg model =
             -- converts the files with strings into data my program can read and interpret
             let
                 convertedFiles =
-                    convertFiles (Debug.log "converting " model.files.fileData)
+                    convertFiles model.files.fileData
             in
-            ( { model | data = Debug.log "converted files" convertedFiles }, Cmd.none )
+            ( { model | data = convertedFiles }, Cmd.none )
 
         -- USER SELECTS FILES. WHEN THEY DO, PASS THOSE FILES ON TO SELECTFILES
         RequestFiles ->

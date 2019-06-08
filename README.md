@@ -1,6 +1,8 @@
 # CIA FACT FINDER
 
-This is my project for the CIA fact finder! I'm actually kinda proud of it. I'll maybe put more info later but for right now I just wanna upload it lol.
+This is my project for the CIA fact finder!
+
+After uploading text files containing information regarding the information on countries (contained in the `Info/` folder), the application will direct you to a page where the user can search for a country or look at indivudual country data, such as birth rate, death rate, GDP, population and unemployment.
 
 The compiled code is in HTML as always for elm projects, and the actual code is in the .elm files.
 

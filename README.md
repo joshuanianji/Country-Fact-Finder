@@ -6,7 +6,7 @@ After uploading text files containing information regarding the information on c
 
 ## How To Use this:
 
-You can either compile it yourself or [look at it on my website](joshuaji.com/projects/fact-finder)
+You can either compile it yourself or [look at it on my website](http://joshuaji.com/projects/fact-finder)
 
 To look at the project, first make sure you have Elm installed. To fiddle with the code, go to the elm files and change it around and save them. To compile the codel use the `elm-make` function or use `elm-reactor` to see your code in the browser, compiled real time as you save. [More info here](https://guide.elm-lang.org/install.html)
 

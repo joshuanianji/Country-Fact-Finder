@@ -480,6 +480,8 @@ closeButton =
     Element.el
         [ Element.width Element.shrink
         , Element.height Element.shrink
+        , Element.mouseOver
+            [ Font.color Colours.redFont ]
         , Font.size 40
         , Element.padding 20
         , onClick (ChangeDirectory HomePage) -- goes back to the home page

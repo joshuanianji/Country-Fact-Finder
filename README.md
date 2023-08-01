@@ -6,6 +6,6 @@ After uploading text files containing information regarding the information on c
 
 ## How To Use this
 
-You can either compile it yourself or [look at it on my website](http://joshuaji.com/projects/fact-finder)
+You can either compile it yourself or [look at it on my website](https://joshuaji.com/Country-Fact-Finder/)
 
 To look at the project, first make sure you have Elm installed. To fiddle with the code, go to the elm files and change it around and save them. To compile the code, execute `elm-live src/Main.elm --pushstate -- --output=elm.js` into the terminal.
